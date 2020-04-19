@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', controllers.listMovies);
 router.get('/:movieId', controllers.listSingleMovie);
 router.post('/', controllers.addMovie);
-// router.put('/:movieId');
-// router.delete('/:movieId');
+router.put('/:movieId', controllers.editMovie);
+router.delete('/:movieId', controllers.deleteMovie);
 
 module.exports = router;
