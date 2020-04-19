@@ -9,6 +9,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 // requires
 const app = require('express')();
+const bodyParser = require('body-parser');
+
+// body parser
+app.use(bodyParser.json());
 
 // components
 const movies = require('./components/movies/routes');

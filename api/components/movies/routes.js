@@ -5,8 +5,8 @@ const router = express.Router();
 
 // base /movies
 router.get('/', controllers.listMovies);
-// router.get('/:movieId');
-// router.post('/');
+router.get('/:movieId', controllers.listSingleMovie);
+router.post('/', controllers.addMovie);
 // router.put('/:movieId');
 // router.delete('/:movieId');
 
